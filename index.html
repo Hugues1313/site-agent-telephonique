@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Le nom du produit est remplacé automatiquement par config.js.
+       Pour le référencement, pensez aussi à remplacer [NOM DU PRODUIT] ici à la mise en ligne. -->
+  <title>[NOM DU PRODUIT] · L'agent qui répond au téléphone à votre place</title>
+  <meta name="description" content="[NOM DU PRODUIT] décroche quand vous êtes occupé, répond à vos clients et vous montre tout : résumé et transcription de chaque appel, reprise en main à tout moment.">
+  <meta name="theme-color" content="#FAF8F3">
+
+  <!-- Typographies : Fraunces (titres) + Inter (texte) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+<!-- ======================================================================
+     EN-TÊTE : un menu simple qui fait défiler vers les sections
+     ====================================================================== -->
+<header class="entete" id="entete">
+  <div class="entete-int conteneur">
+    <a class="marque" href="#hero" aria-label="[NOM DU PRODUIT], haut de page">
+      <span class="logo-emplacement" data-logo>Logo</span>
+      <span class="marque-nom">[NOM DU PRODUIT]</span>
+    </a>
+
+    <nav class="nav-principale" id="nav-principale" aria-label="Navigation">
+      <ul>
+        <li><a href="#comment">Comment ça marche</a></li>
+        <li><a href="#controle">Contrôle</a></li>
+        <li><a href="#pour-qui">Pour qui</a></li>
+        <li><a href="#faq">Questions</a></li>
+        <li class="nav-cta"><a class="btn btn-primaire btn-petit" href="#demo">Demander une démo</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav-principale" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<main id="contenu">
+
+  <!-- ====================================================================
+       1. HERO
+       ==================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-lumiere" aria-hidden="true"></div>
+    <img class="deco-olivier hero-olivier" src="olivier.svg" alt="" aria-hidden="true" data-parallaxe="0.25">
+
+    <div class="hero-int conteneur">
+      <div class="hero-texte">
+        <div class="hero-marque">
+          <span class="logo-emplacement" data-logo data-alt="Logo de [NOM DU PRODUIT]" style="--logo-taille:52px">Logo</span>
+          <span class="surtitre">L'assistant téléphonique des entreprises</span>
+        </div>
+
+        <h1>Ne ratez plus jamais <em>un&nbsp;appel.</em></h1>
+
+        <p class="hero-intro">
+          Quand vous avez les mains prises, [NOM DU PRODUIT] décroche à votre place,
+          répond à vos clients et prend les rendez-vous. <strong>Et vous voyez tout ce qu'il fait.</strong>
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primaire" href="#demo">
+            Demander une démo
+            <svg class="icone icone-fleche" aria-hidden="true"><use href="icones.svg#i-fleche"/></svg>
+          </a>
+          <a class="btn btn-secondaire" href="#comment">Voir comment ça marche</a>
+        </div>
+      </div>
+
+      <!-- Téléphone animé : une seule conversation (exemple fictif) -->
+      <div class="hero-visuel" aria-hidden="true">
+        <div class="hero-visuel-int">
+          <div class="telephone">
+            <div class="telephone-ecran">
+              <div class="tel-statut"><span>12:47</span><span class="tel-encoche"></span><span>●●●</span></div>
+              <div class="tel-appel">
+                <div class="tel-avatar"><svg class="icone"><use href="icones.svg#i-tel"/></svg></div>
+                <p class="tel-nom">Appel entrant</p>
+                <p class="tel-num">06 •• •• •• 42</p>
+                <p class="tel-badge"><span class="point-direct"></span> L'agent a décroché</p>
+              </div>
+              <div class="tel-fil">
+                <p class="tel-ligne client">Bonjour, une table pour 4 samedi soir&nbsp;?</p>
+                <p class="tel-ligne agent">Oui&nbsp;! À 20h ou à 21h30&nbsp;?</p>
+                <p class="tel-ligne client">20h, au nom de Lefèvre. Une personne est allergique aux noix.</p>
+                <p class="tel-ligne agent">C'est noté, je préviens la cuisine. À samedi&nbsp;!</p>
+              </div>
+              <div class="tel-actions">
+                <span><svg class="icone"><use href="icones.svg#i-casque"/></svg>Écouter</span>
+                <span class="tel-reprendre"><svg class="icone"><use href="icones.svg#i-main"/></svg>Reprendre</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-notif notif-1"><div class="notif">
+            <span class="notif-icone ok"><svg class="icone"><use href="icones.svg#i-check"/></svg></span>
+            <span><b>Résumé prêt</b>Table 4 pers. · samedi 20h</span>
+          </div></div>
+          <div class="hero-notif notif-2"><div class="notif">
+            <span class="notif-icone sable"><svg class="icone"><use href="icones.svg#i-resume"/></svg></span>
+            <span><b>À faire</b>Prévenir la cuisine (allergie)</span>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <a class="hero-defiler" href="#probleme" aria-label="Défiler vers la suite"><span></span></a>
+  </section>
+
+
+  <!-- ====================================================================
+       2. LE PROBLÈME
+       ==================================================================== -->
+  <section class="section probleme" id="probleme">
+    <div class="conteneur">
+      <div class="section-tete" data-apparition>
+        <span class="surtitre">Le problème</span>
+        <h2>Le téléphone sonne toujours <em>au mauvais moment.</em></h2>
+        <p>Et un client qui tombe sur la messagerie appelle souvent ailleurs.</p>
+      </div>
+
+      <div class="scenes">
+        <article class="scene" data-apparition="gauche">
+          <span class="scene-heure">12h47</span>
+          <div class="scene-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-resto"/></svg></div>
+          <h3>En plein coup de feu</h3>
+          <p>Trois assiettes dans les mains, la salle pleine. Ça sonne au comptoir.</p>
+          <span class="badge badge-alerte"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-manque"/></svg> Appel manqué</span>
+        </article>
+        <article class="scene" data-apparition data-delai="0.1">
+          <span class="scene-heure">10h15</span>
+          <div class="scene-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-garage"/></svg></div>
+          <h3>Sous une voiture</h3>
+          <p>Les mains pleines de cambouis, impossible de sortir le téléphone de la poche.</p>
+          <span class="badge badge-alerte"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-manque"/></svg> Messagerie</span>
+        </article>
+        <article class="scene" data-apparition="droite" data-delai="0.2">
+          <span class="scene-heure">16h30</span>
+          <div class="scene-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-ciseaux"/></svg></div>
+          <h3>En pleine coupe</h3>
+          <p>Vous n'allez pas poser les ciseaux au milieu d'un client.</p>
+          <span class="badge badge-alerte"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-manque"/></svg> Client perdu</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       3. COMMENT ÇA MARCHE : 3 étapes + aperçu de l'app à onglets
+       ==================================================================== -->
+  <section class="section comment" id="comment">
+    <div class="conteneur">
+      <div class="section-tete centre" data-apparition>
+        <span class="surtitre">Comment ça marche</span>
+        <h2>Simple comme <em>un coup de fil.</em></h2>
+      </div>
+
+      <div class="etapes-cadre">
+        <div class="etapes-ligne" aria-hidden="true"><span class="etapes-ligne-plein"></span></div>
+        <ol class="etapes" data-cascade="zoom">
+          <li class="etape">
+            <div class="etape-icone">
+              <svg class="icone" aria-hidden="true"><use href="icones.svg#i-renvoi"/></svg>
+              <span class="etape-num">1</span>
+            </div>
+            <h3>Il répond quand vous êtes occupé</h3>
+            <p>Poliment, au nom de votre entreprise.</p>
+          </li>
+          <li class="etape">
+            <div class="etape-icone">
+              <svg class="icone" aria-hidden="true"><use href="icones.svg#i-fiche"/></svg>
+              <span class="etape-num">2</span>
+            </div>
+            <h3>Vous lui apprenez votre maison</h3>
+            <p>Horaires, tarifs, règles&nbsp;: une fiche simple à remplir.</p>
+          </li>
+          <li class="etape">
+            <div class="etape-icone">
+              <svg class="icone" aria-hidden="true"><use href="icones.svg#i-bouclier"/></svg>
+              <span class="etape-num">3</span>
+            </div>
+            <h3>Rien n'est caché</h3>
+            <p>Chaque appel vous est rendu, en clair, dans l'application.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Aperçu de l'application : 3 onglets cliquables -->
+      <div class="apercu" data-apparition="zoom">
+        <div class="onglets" role="tablist" aria-label="Aperçu de l'application">
+          <button class="onglet" type="button" role="tab" id="onglet-resume" aria-controls="panneau-resume" aria-selected="true">Résumé</button>
+          <button class="onglet" type="button" role="tab" id="onglet-fiche" aria-controls="panneau-fiche" aria-selected="false" tabindex="-1">Fiche<span class="onglet-long"> entreprise</span></button>
+          <button class="onglet" type="button" role="tab" id="onglet-transcription" aria-controls="panneau-transcription" aria-selected="false" tabindex="-1">Transcription</button>
+        </div>
+
+        <div class="app">
+          <div class="app-barre"><span class="app-points"><i></i><i></i><i></i></span><span class="app-titre">[NOM DU PRODUIT]</span></div>
+          <div class="app-corps">
+            <!-- Barre latérale décorative : suit l'onglet actif -->
+            <div class="app-nav" aria-hidden="true">
+              <span class="app-onglet actif" data-pour="resume"><svg class="icone"><use href="icones.svg#i-resume"/></svg><span>Résumés</span></span>
+              <span class="app-onglet" data-pour="fiche"><svg class="icone"><use href="icones.svg#i-fiche"/></svg><span>Fiche</span></span>
+              <span class="app-onglet" data-pour="transcription"><svg class="icone"><use href="icones.svg#i-bulle"/></svg><span>Transcriptions</span></span>
+            </div>
+
+            <!-- Onglet 1 : Résumé (exemple : salon de coiffure).
+                 Capture réelle possible : capture-resumes.png -->
+            <div class="app-contenu panneau" role="tabpanel" id="panneau-resume" aria-labelledby="onglet-resume" data-capture="capture-resumes.png" data-capture-alt="Capture de l'espace Résumés">
+              <p class="panneau-phrase">Après chaque appel&nbsp;: qui a appelé, pourquoi, ce qui a été fait et ce qu'il vous reste à faire.</p>
+              <div class="app-entete"><p class="app-h">Salon Inès · aujourd'hui</p><span class="app-sous">9 appels</span></div>
+              <div class="appel ouvert">
+                <div class="appel-tete">
+                  <span><span class="appel-qui">Mme Roussel</span> <span class="appel-meta">· 10:05 · 52 s</span></span>
+                  <span class="badge badge-ok">Réservé</span>
+                </div>
+                <p class="appel-texte">Souhaite une coupe et une première couleur. Rendez-vous pris jeudi à 14h avec Inès.</p>
+                <div class="appel-afaire"><span class="case"></span> Bloquer 2h dans l'agenda d'Inès</div>
+              </div>
+              <div class="appel">
+                <div class="appel-tete">
+                  <span><span class="appel-qui">06 •• •• •• 51</span> <span class="appel-meta">· 09:40</span></span>
+                  <span class="badge badge-info">Répondu</span>
+                </div>
+                <p class="appel-texte">Demande le prix d'un balayage. Réponse : à partir de 65 €.</p>
+              </div>
+            </div>
+
+            <!-- Onglet 2 : Fiche entreprise (exemple : plombier).
+                 Capture réelle possible : capture-infos-entreprise.png -->
+            <div class="app-contenu panneau" role="tabpanel" id="panneau-fiche" aria-labelledby="onglet-fiche" data-capture="capture-infos-entreprise.png" data-capture-alt="Capture de la fiche entreprise" hidden>
+              <p class="panneau-phrase">Ce que vous écrivez ici, il s'en sert pour répondre. Plus la fiche est remplie, plus il est juste.</p>
+              <div>
+                <div class="app-entete"><p class="app-h">Plomberie Duval</p><span class="app-sous">Fiche remplie à 70 %</span></div>
+                <div class="jauge" style="--val:70%; margin-top:.5em"><i></i></div>
+              </div>
+              <div class="fiche-grille">
+                <div class="fiche-bloc">
+                  <div class="fiche-titre">Horaires</div>
+                  <div class="fiche-ligne"><span>Lun. → Ven.</span><span>8h–18h</span></div>
+                  <div class="fiche-ligne"><span>Week-end</span><span>Urgences seulement</span></div>
+                </div>
+                <div class="fiche-bloc">
+                  <div class="fiche-titre">Tarifs</div>
+                  <div class="fiche-ligne"><span>Déplacement</span><span>39 €</span></div>
+                  <div class="fiche-ligne"><span>Devis</span><span>Gratuit</span></div>
+                </div>
+              </div>
+              <div class="fiche-bloc">
+                <div class="fiche-titre">Règles particulières</div>
+                <div class="fiche-ligne"><span>Grosse fuite, dégât des eaux</span><span>Me passer l'appel</span></div>
+                <div class="fiche-ligne"><span>Secteur</span><span>25 km autour de l'atelier</span></div>
+              </div>
+            </div>
+
+            <!-- Onglet 3 : Transcription (exemple : magasin de chaussures).
+                 Capture réelle possible : capture-transcriptions.png -->
+            <div class="app-contenu panneau" role="tabpanel" id="panneau-transcription" aria-labelledby="onglet-transcription" data-capture="capture-transcriptions.png" data-capture-alt="Capture d'une transcription" hidden>
+              <p class="panneau-phrase">La conversation complète, mot pour mot, à relire quand vous voulez.</p>
+              <div class="app-entete"><p class="app-h">M. Diallo</p><span class="app-sous">15:22 · 48 s</span></div>
+              <div class="transcription">
+                <p class="bulle bulle-agent"><b>Agent · 00:01</b>Chaussures Bastide, bonjour&nbsp;!</p>
+                <p class="bulle bulle-client"><b>Client · 00:03</b>Vous avez encore les baskets blanches en 40&nbsp;?</p>
+                <p class="bulle bulle-agent"><b>Agent · 00:08</b>Oui, il en reste une paire. Je vous la mets de côté jusqu'à samedi&nbsp;?</p>
+                <p class="bulle bulle-client"><b>Client · 00:13</b>Parfait, au nom de Diallo.</p>
+                <p class="bulle bulle-agent"><b>Agent · 00:16</b>C'est fait. Bonne journée&nbsp;!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       4. IL N'INVENTE PAS : module à cocher
+       ==================================================================== -->
+  <section class="section precision" id="precision">
+    <div class="conteneur">
+      <div class="section-tete" data-apparition>
+        <span class="surtitre">Fiable</span>
+        <h2>Il n'invente pas.</h2>
+        <p>S'il ne sait pas, il le dit. Cochez des infos de la fiche d'un restaurant&nbsp;: sa réponse s'affine.</p>
+      </div>
+
+      <div class="apprendre" data-apprendre data-apparition>
+        <div class="apprendre-fiche">
+          <label class="interrupteur">
+            <span><b>Horaires</b><small>Fermé le lundi</small></span>
+            <input type="checkbox" name="horaires">
+          </label>
+          <label class="interrupteur">
+            <span><b>Règle groupes</b><small>Plus de 8 : me transférer</small></span>
+            <input type="checkbox" name="groupes">
+          </label>
+          <label class="interrupteur">
+            <span><b>Tarifs groupe</b><small>Menu à 28 € par personne</small></span>
+            <input type="checkbox" name="tarifs">
+          </label>
+          <div class="apprendre-jauge">
+            <div class="apprendre-jauge-lib"><span>Fiche</span><b data-pourcentage>25 %</b></div>
+            <div class="jauge"><i style="width:25%"></i></div>
+          </div>
+        </div>
+
+        <div class="apprendre-appel">
+          <p class="apprendre-bulle apprendre-client"><b>Client</b>Vous êtes ouverts lundi midi&nbsp;? On serait 10.</p>
+          <p class="apprendre-bulle apprendre-agent" aria-live="polite"><b>Agent</b><span class="apprendre-reponse">Je n'ai pas encore cette information. Je note votre numéro, le gérant vous rappelle.</span></p>
+          <span class="badge badge-alerte apprendre-verdict">Message pour le gérant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       5. VOUS GARDEZ LA MAIN : démo + transfert
+       ==================================================================== -->
+  <section class="section controle" id="controle">
+    <div class="controle-fond" aria-hidden="true"></div>
+    <div class="conteneur">
+      <div class="section-tete centre" data-apparition>
+        <div class="frise" aria-hidden="true" style="margin: 0 auto 28px"></div>
+        <span class="surtitre">Contrôle</span>
+        <h2>Vous gardez <em>la main.</em></h2>
+      </div>
+
+      <div class="controle-grille">
+        <div class="controle-texte" data-apparition="gauche">
+          <span class="pastille"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-casque"/></svg> En direct</span>
+          <h3>Suivez l'appel. Reprenez-le d'un geste.</h3>
+          <p>La conversation s'écrit sous vos yeux. Un bouton, et c'est vous qui parlez au client.</p>
+          <p class="controle-essai">Essayez pendant l'appel ci-contre.</p>
+        </div>
+
+        <!-- Démo interactive (exemple fictif d'un garage) -->
+        <div class="direct" data-direct data-apparition="zoom">
+          <div class="direct-tete">
+            <div class="direct-qui-appelle">
+              <span class="direct-avatar"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-tel"/></svg></span>
+              <span><b>Garage Martin</b><small>Appel de 07 •• •• •• 63</small></span>
+            </div>
+            <span class="direct-etat" data-etat="attente"><span class="point-direct"></span><span class="direct-etat-txt">En attente</span> · <span class="direct-minuteur">00:00</span></span>
+          </div>
+          <div class="direct-fil" data-lenis-prevent aria-live="polite"></div>
+          <div class="direct-pied">
+            <button class="btn btn-primaire direct-bouton" type="button" data-reprendre>
+              <svg class="icone" aria-hidden="true"><use href="icones.svg#i-main"/></svg>
+              <span>Reprendre la main</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schéma court du transfert -->
+      <div class="transfert">
+        <h3 class="transfert-titre" data-apparition>Une demande délicate&nbsp;? Il vous passe l'appel.</h3>
+        <div class="flux" data-flux>
+          <div class="flux-noeud flux-agent">
+            <span class="flux-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-bulle"/></svg></span>
+            <strong>L'agent écoute la demande</strong>
+          </div>
+          <div class="flux-ligne" aria-hidden="true"></div>
+          <div class="flux-issues">
+            <div class="flux-issue">
+              <span class="badge badge-info">Demande simple</span>
+              <strong>Il répond lui-même</strong>
+              <p>Horaires, prix, prise de rendez-vous.</p>
+            </div>
+            <div class="flux-issue flux-humain">
+              <span class="badge badge-transfert">Demande délicate</span>
+              <strong>Transfert à vous ou à votre équipe</strong>
+              <ul>
+                <li>Une réclamation</li>
+                <li>Un devis sur mesure</li>
+                <li>Un client qui veut parler à quelqu'un</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       6. POUR QUI : une ligne compacte de métiers
+       ==================================================================== -->
+  <section class="section pour-qui" id="pour-qui">
+    <div class="conteneur">
+      <div class="section-tete centre" data-apparition>
+        <span class="surtitre">Pour qui</span>
+        <h2>Pour tous ceux <em>qui ne peuvent pas décrocher.</em></h2>
+      </div>
+      <ul class="metiers" data-cascade>
+        <li class="metier">
+          <span class="metier-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-resto"/></svg></span>
+          <span><b>Restaurants</b><q>Vous avez un menu enfant&nbsp;?</q></span>
+        </li>
+        <li class="metier">
+          <span class="metier-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-garage"/></svg></span>
+          <span><b>Garages</b><q>Ma voiture est prête&nbsp;?</q></span>
+        </li>
+        <li class="metier">
+          <span class="metier-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-ciseaux"/></svg></span>
+          <span><b>Coiffeurs</b><q>Un créneau samedi matin&nbsp;?</q></span>
+        </li>
+        <li class="metier">
+          <span class="metier-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-marteau"/></svg></span>
+          <span><b>Artisans</b><q>Vous pouvez passer demain&nbsp;?</q></span>
+        </li>
+        <li class="metier">
+          <span class="metier-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-sac"/></svg></span>
+          <span><b>Commerces</b><q>Vous livrez à domicile&nbsp;?</q></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       7. QUESTIONS FRÉQUENTES
+       ==================================================================== -->
+  <section class="section faq-section" id="faq">
+    <div class="conteneur">
+      <div class="section-tete centre" data-apparition>
+        <span class="surtitre">Questions fréquentes</span>
+        <h2>Ce que vous <em>voulez savoir.</em></h2>
+      </div>
+      <div class="faq" data-apparition>
+        <details>
+          <summary>Combien ça coûte&nbsp;?</summary>
+          <p>[À COMPLÉTER : tarifs, formules, période d'essai éventuelle]</p>
+        </details>
+        <details>
+          <summary>Mes clients savent-ils qu'ils parlent à une IA&nbsp;?</summary>
+          <p>[À COMPLÉTER : comment l'agent se présente au début de l'appel]</p>
+        </details>
+        <details>
+          <summary>Les appels sont-ils enregistrés&nbsp;? Et le RGPD&nbsp;?</summary>
+          <p>[À COMPLÉTER : enregistrement ou non, durée de conservation, lieu d'hébergement des données, information des appelants, conformité RGPD]</p>
+        </details>
+        <details>
+          <summary>Combien de temps pour le mettre en place&nbsp;?</summary>
+          <p>[À COMPLÉTER : délai de mise en route et accompagnement]</p>
+        </details>
+        <details>
+          <summary>Et s'il ne connaît pas la réponse&nbsp;?</summary>
+          <p>Il note les coordonnées du client ou vous transfère l'appel. Le résumé vous le signale&nbsp;: ajoutez l'info à votre fiche pour la prochaine fois.</p>
+        </details>
+        <details>
+          <summary>Je peux reprendre un appel depuis mon téléphone&nbsp;?</summary>
+          <p>[À COMPLÉTER : application mobile, ordinateur, ou les deux]</p>
+        </details>
+        <details>
+          <summary>Est-ce que je garde mon numéro&nbsp;?</summary>
+          <p>[À COMPLÉTER : renvoi d'appel depuis votre ligne actuelle ou nouveau numéro]</p>
+        </details>
+        <details>
+          <summary>Puis-je arrêter quand je veux&nbsp;?</summary>
+          <p>[À COMPLÉTER : engagement et résiliation]</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       8. DEMANDER UNE DÉMO
+       ==================================================================== -->
+  <section class="section demo" id="demo">
+    <img class="deco-olivier demo-olivier" src="olivier.svg" alt="" aria-hidden="true">
+    <div class="conteneur demo-grille">
+      <div class="demo-texte" data-apparition="gauche">
+        <span class="surtitre">Demander une démo</span>
+        <h2>Voyez-le répondre <em>à vos clients.</em></h2>
+        <p>Laissez-nous vos coordonnées&nbsp;: on vous rappelle pour vous montrer l'agent en action, avec l'exemple de votre propre activité.</p>
+
+        <ul class="demo-infos">
+          <li>
+            <span class="demo-infos-lib">E-mail</span>
+            <a data-contact="email" href="#demo">[À COMPLÉTER : e-mail de contact]</a>
+          </li>
+          <li>
+            <span class="demo-infos-lib">Téléphone</span>
+            <a data-contact="telephone" href="#demo">[À COMPLÉTER : numéro de téléphone]</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="demo-carte" data-apparition="droite">
+        <!-- Formulaire de démonstration : pour l'instant, AUCUNE donnée n'est envoyée.
+             Un simple message de confirmation s'affiche (voir main.js).
+             [À COMPLÉTER] Brancher plus tard un service d'envoi (Formspree, Brevo, etc.). -->
+        <form class="formulaire" data-formulaire-demo novalidate>
+          <div class="ligne">
+            <div class="champ">
+              <label for="f-nom">Prénom et nom</label>
+              <input id="f-nom" name="nom" type="text" autocomplete="name" required>
+            </div>
+            <div class="champ">
+              <label for="f-entreprise">Entreprise</label>
+              <input id="f-entreprise" name="entreprise" type="text" autocomplete="organization" required>
+            </div>
+          </div>
+          <div class="champ">
+            <label for="f-activite">Votre activité</label>
+            <select id="f-activite" name="activite" required>
+              <option value="">Choisissez…</option>
+              <option>Restaurant, café, bar</option>
+              <option>Garage, carrosserie</option>
+              <option>Coiffure, beauté, bien-être</option>
+              <option>Artisan du bâtiment</option>
+              <option>Commerce</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="ligne">
+            <div class="champ">
+              <label for="f-tel">Téléphone</label>
+              <input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="champ">
+              <label for="f-email">E-mail <small>(facultatif)</small></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email">
+            </div>
+          </div>
+          <div class="champ">
+            <label for="f-message">Un mot sur vos besoins <small>(facultatif)</small></label>
+            <textarea id="f-message" name="message" rows="3" placeholder="Ex. : on rate beaucoup d'appels le midi."></textarea>
+          </div>
+          <label class="consentement">
+            <input type="checkbox" name="consentement" required>
+            <span>J'accepte d'être recontacté au sujet de ma demande. <a href="#">Politique de confidentialité [À COMPLÉTER]</a></span>
+          </label>
+          <p class="formulaire-erreur" role="alert" hidden>Merci de remplir les champs obligatoires.</p>
+          <button class="btn btn-primaire" type="submit">
+            Demander ma démo
+            <svg class="icone icone-fleche" aria-hidden="true"><use href="icones.svg#i-fleche"/></svg>
+          </button>
+        </form>
+
+        <div class="confirmation" data-confirmation hidden tabindex="-1">
+          <div class="confirmation-icone"><svg class="icone" aria-hidden="true"><use href="icones.svg#i-check"/></svg></div>
+          <h3>Merci, c'est noté&nbsp;!</h3>
+          <p>Nous vous recontactons très vite pour organiser votre démo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ======================================================================
+     9. PIED DE PAGE MINIMAL
+     ====================================================================== -->
+<footer class="pied">
+  <div class="frise" aria-hidden="true"></div>
+  <div class="conteneur pied-int">
+    <a class="marque" href="#hero">
+      <span class="logo-emplacement" data-logo>Logo</span>
+      <span class="marque-nom">[NOM DU PRODUIT]</span>
+    </a>
+    <ul class="pied-liens">
+      <li><a href="#">Mentions légales [À COMPLÉTER]</a></li>
+      <li><a href="#">Confidentialité [À COMPLÉTER]</a></li>
+    </ul>
+    <p class="pied-bas">© <span data-annee>2026</span> [NOM DU PRODUIT] · [À COMPLÉTER : raison sociale, SIRET]</p>
+  </div>
+</footer>
+
+
+<!-- ======================================================================
+     SCRIPTS : GSAP + ScrollTrigger (animations), Lenis (défilement fluide).
+     Si un CDN ne répond pas, la page reste entièrement lisible, sans animations.
+     ====================================================================== -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="config.js"></script>
+<script defer src="main.js"></script>
+</body>
+</html>

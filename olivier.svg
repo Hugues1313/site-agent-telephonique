@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Branche d'olivier décorative, utilisée en filigrane (faible opacité) -->
+  <path d="M8 84 C 90 66, 170 72, 250 52 S 360 30, 394 18" stroke="#6E7B45" stroke-width="2" stroke-linecap="round"/>
+  <g fill="#6E7B45">
+    <ellipse cx="52" cy="66" rx="20" ry="5.5" transform="rotate(-32 52 66)"/>
+    <ellipse cx="70" cy="88" rx="20" ry="5.5" transform="rotate(24 70 88)" opacity=".8"/>
+    <ellipse cx="100" cy="60" rx="21" ry="5.5" transform="rotate(-34 100 60)" opacity=".85"/>
+    <ellipse cx="122" cy="84" rx="20" ry="5.5" transform="rotate(22 122 84)"/>
+    <ellipse cx="152" cy="58" rx="21" ry="5.5" transform="rotate(-36 152 58)"/>
+    <ellipse cx="176" cy="80" rx="20" ry="5.5" transform="rotate(20 176 80)" opacity=".8"/>
+    <ellipse cx="206" cy="50" rx="21" ry="5.5" transform="rotate(-38 206 50)" opacity=".9"/>
+    <ellipse cx="232" cy="72" rx="20" ry="5.5" transform="rotate(18 232 72)"/>
+    <ellipse cx="262" cy="38" rx="20" ry="5.5" transform="rotate(-40 262 38)"/>
+    <ellipse cx="290" cy="58" rx="19" ry="5" transform="rotate(14 290 58)" opacity=".8"/>
+    <ellipse cx="320" cy="24" rx="18" ry="5" transform="rotate(-42 320 24)" opacity=".9"/>
+    <ellipse cx="346" cy="42" rx="17" ry="4.5" transform="rotate(10 346 42)"/>
+    <ellipse cx="380" cy="10" rx="14" ry="4" transform="rotate(-30 380 10)" opacity=".85"/>
+  </g>
+  <g fill="#3F4A27">
+    <ellipse cx="140" cy="94" rx="6" ry="7.5"/>
+    <ellipse cx="270" cy="70" rx="5.5" ry="7"/>
+  </g>
+</svg>
